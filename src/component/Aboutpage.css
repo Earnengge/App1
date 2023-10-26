@@ -1,0 +1,37 @@
+#root {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.card {
+    margin: 50px;
+    background-color: #27292a;
+    padding: 10px 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    transition: all 0.2s;
+    width: fit-content;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    background-color: #2b2d2e;
+}
+
+.highlight {
+    color: var(--main-color);
+}
+
+img {
+    background: lightgray;
+    background: radial-gradient(rgba(126, 126, 126, 0.8) 0%, rgba(0, 0, 0, 0) 70%);
+    padding: 50px;
+}
+
+#logo {
+    padding: 30px 0;
+    width: 100%;
+}
