@@ -3,7 +3,12 @@ import "./sidebar.css";
 import { Link } from "react-router-dom";
 
 function Sidebar({isOpen}) {
-  
+   
+        const handleLinkClick = (e) => {
+          // Prevent the click event from propagating and closing the sidebar
+          e.stopPropagation();
+        };
+      
 
   return (
     <>
@@ -20,8 +25,8 @@ function Sidebar({isOpen}) {
 <p>Pages</p>
 </div>
 <div id="pages">
-<Link id="page-home" to="/" class="sidebar-active">Home</Link>
-<div class="sidebar-collapsible">
+<Link id="page-home" to="/" class="sidebar-active"  onClick={handleLinkClick}>Home</Link>
+<div class="sidebar-collapsible"  onClick={handleLinkClick}>
 TNT Games
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
 <g transform="matrix(.2 0 0 .2 0 6.67266)">
@@ -31,14 +36,14 @@ TNT Games
 </g>
 </svg>
 <div class="sidebar-content">
-<a id="page-stats" href="/stats">Stats</a>
-<a id="page-playercount" href="/playercount">Player Count</a>
-<a id="page-leaderboard" href="/leaderboard">Wizards Leaderboards</a>
+<a id="page-stats" href="/stats"  onClick={handleLinkClick}>Stats</a>
+<a id="page-playercount" href="/playercount"  onClick={handleLinkClick}>Player Count</a>
+<Link id="page-leaderboard" to="/leaderBoard"  onClick={handleLinkClick}>Wizards Leaderboards</Link>
 </div>
 </div>
-<Link id="page-about" to="/about">About</Link>
-<Link id="page-about" to="/about">Profile</Link>
-<a id="page-contact" href="/contact">Contact</a>
+<Link id="page-about" to="/about"  onClick={handleLinkClick}>About</Link>
+<Link id="page-about" to="/Profile"  onClick={handleLinkClick}>Profile</Link>
+<a id="page-contact" href="/contact"  onClick={handleLinkClick}>Contact</a>
 </div>
 </div>
     </>

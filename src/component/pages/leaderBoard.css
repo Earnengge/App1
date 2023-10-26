@@ -1,0 +1,38 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#main {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    padding: 25px 0;
+    position: relative;
+}
+table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border: 1px solid #3f4141;
+}
+.bodyRow {
+    transition: all 0.2s;
+    background-color: #27292a;
+    border: 1px solid #3f4141;
+}
+
+td {
+    transition: background-color 0.2s;
+    padding: 0.4em;
+}
+
+@media screen and (max-width: 750px) {
+    #main {
+        width: 90%;
+    }
+
+    #collapsible, #content {
+        width: auto;
+        left: 0;
+    }
+}
