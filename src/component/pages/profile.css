@@ -10,34 +10,18 @@
     display: block;
     height: auto;
     border-radius:50%;
-    max-width: 100%;
+    max-width: 50%;
 }
-.profile-avatar img{
-    
-        border-radius: 50%;
-        height: 100%;
-        position: relative;
-        width: 100%;
-        z-index: 1;
-}
+
 .profile-name h2{color: white;
     font-size: 1.8rem;
     font-weight: 800;
     letter-spacing: -.05em;
     line-height: 1.25;
-    margin-bottom: .5rem;
     margin-top: 1rem;
     max-width: 600px;
     word-break: break-word;}
-   .profile-avatar {
-    display: flex;
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    }
-    @media screen and (max-width: 840px){
-    .web3-profile-base .profile-avatar, .web3-profile-base .profile-avatar .avatar {
-        height: 6rem;
-        width: 6rem;
-    }}
+  
+  .profile-avater{
+    width:50%;
+  }
