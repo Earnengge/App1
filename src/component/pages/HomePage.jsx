@@ -1,5 +1,6 @@
 import React, { useEffect } from "react"
 import "../home.css"
+import VerticalSlider from "../components/slider"
 function Home() {
   return (
     <>
@@ -16,10 +17,10 @@ function Home() {
 </text>
 </svg>
 <div id="banner-text">
-<h2>The most in-depth TNT Games stats available!</h2>
-<p>New v2.5.1, The Mobile Update! Check out the announcement in my Discord server!</p>
+<h2>Hi Friends </h2>
+<p>A new project has emerged, drawing inspiration from my past experiences in the crypto space. It's the belief that we should all strive to profit and enjoy ourselves in this realm, making it even more exciting.</p>
 <h3>Discord Server</h3>
-
+<VerticalSlider/>
 </div>
 </div>
     </>

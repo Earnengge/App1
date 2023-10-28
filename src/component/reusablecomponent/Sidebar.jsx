@@ -25,7 +25,7 @@ function Sidebar({isOpen}) {
 <p>Pages</p>
 </div>
 <div id="pages">
-<Link id="page-home" to="/" class="sidebar-active"  onClick={handleLinkClick}>Home</Link>
+<Link id="page-home" to="/" className={isOpen?"sidebar-active":"not-active"}  onClick={handleLinkClick}>Home</Link>
 <div class="sidebar-collapsible"  onClick={handleLinkClick}>
 TNT Games
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
