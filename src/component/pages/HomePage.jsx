@@ -20,8 +20,9 @@ function Home() {
 <h2>Hi Friends </h2>
 <p>A new project has emerged, drawing inspiration from my past experiences in the crypto space. It's the belief that we should all strive to profit and enjoy ourselves in this realm, making it even more exciting.</p>
 <h3>Discord Server</h3>
-<VerticalSlider/>
+
 </div>
+<VerticalSlider/>
 </div>
     </>
   )
