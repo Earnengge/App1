@@ -1,26 +1,35 @@
 import React, { useEffect } from "react"
 import "../home.css"
 import VerticalSlider from "../components/slider"
+import Logoimage from "../imagesLogo/logo1.png"
 function Home() {
   return (
     <>
-<div id="banner">
-<svg id="banner-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 100">
-<title>Plotzes</title>
-<g transform="matrix(0 -.1 .1 0 0 100)">
-<path d="M44.296 446.293s150.017 135.58 408.206 135.58 408.206-135.58 408.206-135.58 235.57 320.8-35.64 425.43-372.567-289.85-372.567-289.85" fill="none" stroke="var(--main-color)" stroke-width="88.59" stroke-linecap="round" stroke-linejoin="round"></path>
-<circle cx="200.422" cy="82.397" r="82.397" fill="var(--main-color)"></circle>
-<circle cx="752.323" cy="82.397" r="82.397" fill="var(--main-color)"></circle>
-</g>
-<text transform="matrix(12.59846 0 0 12.59846 -1445.293 -307.27)" font-size="10.583" font-family="Quicksand" fill="var(--main-color)">
-<tspan x="122.645" y="32.221">lotzes</tspan>
-</text>
-</svg>
-<div id="banner-text">
-<h2>Hi Friends </h2>
-<p>A new project has emerged, drawing inspiration from my past experiences in the crypto space. It's the belief that we should all strive to profit and enjoy ourselves in this realm, making it even more exciting.</p>
-<h3>Discord Server</h3>
+    <div>
 
+<div id="banner">
+<img src={Logoimage} loading="lazy" alt="company-logo" className="logos"/>
+
+<h2>Are you ready to embark on a limitless crypto adventure with EarnEngage?</h2>
+
+
+
+<div className="boxtwo">
+
+
+<div id="banner-text">
+<p style={{marginTop:"30px"}}> Join us in exploring boundless opportunities in the ever-evolving crypto world. Inspired by my past experiences, both the challenges and successes. We've crafted a unique social finance model that not only allows you to engage with the crypto world but also rewards you for your journey while Engaging in your Social Activities on a weekly bases. Let's redefine the way you experience crypto. Join us today.".</p>
+<div className="btn" style={{ marginTop: "30px" }}>
+  <button className="buy-button">Buy</button>
+  <button className="sell-button">Sell</button>
+</div>
+
+</div>
+  <div className="image">
+
+<img src={Logoimage} loading="lazy" alt="company-logo" className="Logo"/>  </div>
+
+</div>
 </div>
 <VerticalSlider/>
 </div>

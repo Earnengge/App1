@@ -1,9 +1,13 @@
 .slider-container {
-    width: 100%;
+    width: 100vw;
+    /* margin-top: 50%; */
     height: 100vh;
     overflow: hidden;
     position: relative;
-  }
+}
+
+
+  
   
   .slider-slide {
     width: 100%;

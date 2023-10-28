@@ -1,26 +1,65 @@
 #banner {
-    min-height: calc(100vh);
-    background: rgb(37, 37, 37, 0.8);
-    background: radial-gradient(circle, rgb(41, 41, 41, 0.8) 0%, rgb(32, 32, 32, 0.8) 65%);
-    text-align: center;
-    box-shadow: inset 0px 0px 45px 0px rgba(255, 255, 255, 0.1);
+    min-height: 100vh;
+   
+    text-align: left;
+    display: flex;
     padding: 0 20px;
     min-width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10%;
+    align-items: center;
+}
+#banner h2{
+font-size: 55px;
+font-weight: 600;
+margin-left: 48px;
+margin-bottom: 33px;
+}
+#banner-text {
+    font-size: 18px;
+    max-width: 50%;
+    max-height: 50%;
+    text-align: start;
 }
 #banner-icon {
     margin: 100px 30%;
     margin-bottom: auto;
 }
-#banner-text {
-    margin-top: 50px;
-    font-size: 18px;
+.boxtwo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 49px;
+    
+
 }
+.logoheader{
+    width: 47px;
+    margin-left: 34px;
+    height: 27px;
+    margin-top: 2px;
+
+}
+
+.image img{
+width: 50%;
+height: 50%;
+}
+.logos {
+    display: none;
+}
+
 h3 {
     margin-bottom: 5px;
 }
 h2, p {
     margin: 0;
 }
+.btn{
+    display: flex;
+}
+
 #discord-invite {
     display: flex;
     padding: 10px;
@@ -45,4 +84,76 @@ h2, p {
 }
 #discord-invite-text div {
     font-size: 0.8em;
+}
+.btn {
+    display: flex;
+    justify-content: space-around;
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .buy-button,
+  .sell-button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #333;
+    font-size: 16px;
+    width: 10em;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .buy-button {
+    background-color: lightblue;
+    margin-right: 10px; /* Add some spacing between the buttons */
+  }
+  
+  .sell-button {
+    background-color: lightblue;
+    margin-right: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  }
+  
+   .sell-button:hover {
+
+    background-color: #0099cc; /* Light blue color when hovered */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4); /* Realistic shadow on hover */
+  }
+  .buy-button:hover{
+    background-color: #0099cc; /* Light blue color when hovered */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4); /* Realistic shadow on hover */
+ 
+  }
+  
+  
+@media(max-width:768px){
+    #banner-text {
+        font-size: 18px;
+        min-width: 100%;
+      min-height: 100%;}
+      .boxtwo{
+        margin-left: 40px;
+      }
+      .logos {
+        display: block;
+        width: 50%;
+        margin-left: 37px;
+height: 50%;
+      }
+      .Logo {
+        display: none;
+      }
+      #banner h2 {
+        font-size: 25px;
+        font-weight: 600;
+        margin-left: 40px;
+        margin-bottom: -4px;
+    }
+
 }
