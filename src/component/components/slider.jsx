@@ -30,7 +30,7 @@ const VerticalSlider = () => {
           className={`slider-slide ${index === currentSlide ? 'active' : ''}`}
         >
           <div className="scrolling-text-container">
-            <div className="scrolling-text">{slide}</div>
+            <div className="scrolling-text"><p>{slide}</p></div>
           </div>
         </div>
       ))}

@@ -130,13 +130,24 @@ h2, p {
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4); /* Realistic shadow on hover */
  
   }
-  
+  .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+  }
   
 @media(max-width:768px){
     #banner-text {
         font-size: 18px;
         min-width: 100%;
       min-height: 100%;}
+      #banner {
+      
+        margin-left: 49px;
+        
+    }
       .boxtwo{
         margin-left: 56px;
         min-width: 250px;

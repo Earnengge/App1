@@ -41,6 +41,7 @@ TNT Games
 <Link id="page-leaderboard" to="/leaderBoard"  onClick={handleLinkClick}>Wizards Leaderboards</Link>
 </div>
 </div>
+<Link to="/taskPage" onClick={handleLinkClick}> See Task</Link>
 <Link id="page-about" to="/about"  onClick={handleLinkClick}>About</Link>
 <Link id="page-about" to="/Profile"  onClick={handleLinkClick}>Profile</Link>
 <a id="page-contact" href="/contact"  onClick={handleLinkClick}>Contact</a>

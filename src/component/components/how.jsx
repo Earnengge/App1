@@ -9,9 +9,7 @@ const TestimonialCard = ({ imgSrc, text, name, occupation }) => (
         <p>{text}</p>
       </div>
    
-      <div className="details">
-        <h2>{name}<br /><span>{occupation}</span></h2>
-      </div>
+   
     </div>
   </div>
 );
