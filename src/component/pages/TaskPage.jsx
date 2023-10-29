@@ -1,11 +1,37 @@
-// import { useSocialSignup } from "../../hooks/useSocialSignup";
+import { useEffect, useState } from "react";
 import { useAuthContext } from "../../context/authContext";
+import { db } from "../../firebase/config";
+import { collection, addDoc } from "firebase/firestore";
+import firebase from 'firebase/app';
+import "firebase/firestore"
 
 
 const TaskPage = () => {
 
-    // const twitter = useSocialSignup(twitterProvider);
     const { user } = useAuthContext();
+    const [tweetText, setTweetText] = useState('');
+
+    const handleTweetSubmit = async () => {
+        console.log(tweetText)
+        try {
+
+            if (user) {
+                const docRef = await addDoc(collection(db, 'tweets'), {
+                    twit_link: tweetText,
+                    userid: user.uid,
+                    timestamp: firebase.firestore.FieldValue.serverTimestamp()
+                  });
+                  console.log("Document written with ID: ", docRef.id);
+
+                setTweetText('');
+            } else {
+                // Handle the case when the user is not authenticated.
+                console.log("NOT AUTHENTICATED")
+            }
+        } catch (error) {
+            console.log(error)
+        }
+    };
 
     return (
         <div style={{ marginBlock: '4rem' }}>
@@ -17,6 +43,9 @@ const TaskPage = () => {
 
                         <div>
                             <p>1. Follow <a href="">Earnengage on twitter</a></p>
+
+                            <input style={{padding: '1rem', color: "red"}} type="text" value={tweetText} onChange={(e)=> setTweetText(e.target.value)} />
+                            <button style={{padding: '1rem'}} onClick={handleTweetSubmit}>submit</button>
                         </div>
                     </div>
                     :
