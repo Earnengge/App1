@@ -113,6 +113,9 @@ a {
     border-color: transparent transparent rgba(54, 55, 56, 0.5) transparent;
     box-sizing: border-box;
 }
+.boxtwo{
+    margin-bottom: 30px;
+}
 
 #discord-popup * {
     margin: 5px auto;
@@ -144,5 +147,8 @@ a {
 @media (max-width:768px) {
     #name{
         display: none;
+    }
+    #social{
+        display:none;
     }
 }

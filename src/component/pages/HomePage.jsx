@@ -2,6 +2,7 @@ import React, { useEffect } from "react"
 import "../home.css"
 import VerticalSlider from "../components/slider"
 import Logoimage from "../imagesLogo/logo1.png"
+import Testimonials from "../components/how"
 function Home() {
   return (
     <>
@@ -32,6 +33,7 @@ function Home() {
 </div>
 </div>
 <VerticalSlider/>
+<Testimonials/>
 </div>
     </>
   )
