@@ -12,6 +12,8 @@ main#carousel {
   grid-row: 1 / 2;
   grid-column: 1 / 8;
   width: 100vw;
+  margin-top:10%;
+
   height: 500px;
   display: flex;
   align-items: center;
@@ -28,6 +30,7 @@ main#carousel {
 div.item {
 
   position: absolute;
+  flex-direction: column;
   width: 300px;
   display: flex;
   padding: 20px;
@@ -107,10 +110,28 @@ input:nth-of-type(5):checked ~ main#carousel {
   display: flex;
   align-items: center;
   justify-content: center;
+height: fit-content;
+
 }
 #text h2{
-font-size: 16px;
+font-size: 12px;
+margin-top: 50px;
      font-family: "NovaFlat-Regular";
 ;
 color: black;
+}
+
+.roundedcard{
+
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "NovaFlat-Regular";
+  margin-top: -40px;
+  margin-left: 40%;
+  background-color: black;
 }
