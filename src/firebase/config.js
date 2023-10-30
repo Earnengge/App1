@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
+
 import {
     getAuth,
     TwitterAuthProvider,
@@ -23,8 +24,6 @@ const firebaseConfig = {
     appId,
     measurementId,
 };
-
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);

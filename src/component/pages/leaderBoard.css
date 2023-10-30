@@ -25,6 +25,9 @@ td {
     transition: background-color 0.2s;
     padding: 0.4em;
 }
+td a{
+    color:white
+}
 
 @media screen and (max-width: 750px) {
     #main {

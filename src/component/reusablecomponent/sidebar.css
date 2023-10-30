@@ -1,18 +1,13 @@
 /* Add your styles for collapsed and expanded states */
 :root {
-    --main-color: #0099cc;
+    --main-color: #044b16;
     --main-color-rgb: 0, 240, 240;
 }
-@font-face {
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url("/src/assets/Quicksand/static/Quicksand-Light.ttf") format('ttf');}
+
 
 body {
     background-color: #1d1f20;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "NovaFlat-Regular";
     color: lightgray;
     margin: 0;
     overflow-y: scroll;
@@ -30,12 +25,14 @@ body {
   
   #sidebar.expanded {
     left: 0;
-    height: calc(100vh - 70px);
+    height: 100vh;
     background-color: #191b1d;
     border-top: 1px solid #000;
     box-sizing: border-box;
     box-shadow: inset -5px 0 10px -5px rgba(0, 0, 0, 0.5);
     max-width: 150px;
+        font-family: "NovaFlat-Regular";
+
     overflow: hidden;
     position: fixed;
     top: 70px;
@@ -78,15 +75,14 @@ body {
     border-radius: 5px;
 }
 
-#pages a:hover {
-    color: var(--main-color);
-    background-color: rgba(var(--main-color-rgb), 0.05);
+#pages a:hover {    padding-left: 21px;
+    color: white;
+    border-top-right-radius: -98px;
+    border-bottom-left-radius: 24px;
+    background-color: #044b16;
 }
 
-#pages .sidebar-active {
-    color: var(--main-color);
-    background-color: rgba(var(--main-color-rgb), 0.05);
-}
+
 #pages .not-active{
     display: none;
 }

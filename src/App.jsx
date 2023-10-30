@@ -31,7 +31,10 @@ function App() {
           />
 
           <Route path='/about' element={<AboutPage />} />
-          <Route path='/TaskPage' element={< TaskPage/>} />
+          <Route path='/TaskPage' element={<>
+                <HeaderComponent />
+                < TaskPage/>
+              </>} />
 
           <Route
             path='/profile'

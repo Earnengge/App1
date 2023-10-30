@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './VerticalSlider.css';
+import BackgroundVideo from "../imagesLogo/video.mp4"; // Update this with the actual path to your video
+
 
 const VerticalSlider = () => {
   const slides = [
@@ -23,19 +25,29 @@ const VerticalSlider = () => {
   }, []);
 
   return (
-    <div className="slider-container">
-      {slides.map((slide, index) => (
-        <div
-          key={index}
-          className={`slider-slide ${index === currentSlide ? 'active' : ''}`}
-        >
-          <div className="scrolling-text-container">
-            <div className="scrolling-text"><p>{slide}</p></div>
-          </div>
-        </div>
-      ))}
+    <div className='body'>
+  <input type="radio" name="position" checked />
+  <input type="radio" name="position" />
+  <input type="radio" name="position" />
+  <input type="radio" name="position" />
+  <input type="radio" name="position" />
+  <main id="carousel">
+    <div className="item">
+      <span id="text">
+        <h2>
+        'In the realm of life experiences in this Crypto, blockchain, or web3, however, you may refer to it, it\'s safe to say that each of us carries our own unique blend of challenges (Pains) and triumphs (Gains). Here is my Story that inspired me to create this Outstanding Socialfi-Launchpad',
+
+        </h2>
+      </span>
     </div>
+    <div className="item"></div>
+    <div className="item"></div>
+    <div className="item"></div>
+    <div className="item"></div>
+    </main>
+</div>
   );
 };
 
 export default VerticalSlider;
+

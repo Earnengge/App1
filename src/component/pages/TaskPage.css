@@ -1,0 +1,15 @@
+input[type="text"]{
+    font-size: 20px;
+    width: 350px;
+    padding-left: 29px;
+    height: 43px;
+    border-color: green;
+    display: flex;
+    margin-top: 10px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.insertTweetLink{
+    margin-top: 40px;
+}

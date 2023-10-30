@@ -3,15 +3,21 @@ margin: 0;
 padding: 0;
 }
 :root {
-    --main-color:  #0099cc;
+    --main-color:  #044b16;
     --main-color-rgb: 0, 240, 240;
 }
+@font-face {
+    font-family: 'NovaFlat-Regular';
+    src: url('/src/assets/NovaFlat.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 
 #header {
     background-color: #191b1d;
-    font-family: "Quicksand", sans-serif;
+    font-family: "NovaFlat-Regular", sans-serif;
     height: 70px;
-    width: 100vw;
+    width: 140vw;
     box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.5);
     position: fixed;
     top: 0;
@@ -50,7 +56,7 @@ a {
     position: absolute;
     height: 3px;
     width: 20px;
-    background-color: #0099cc;
+    background-color: #044b16;
     top: 8.5px;
     left: 5px;
     transition: all 0.2s;
@@ -60,7 +66,7 @@ a {
     position: absolute;
     height: 3px;
     width: 20px;
-    background-color: #0099cc;
+    background-color: #044b16;
     top: 18.5px;
     left: 5px;
     transition: all 0.2s;
@@ -143,7 +149,9 @@ a {
     margin-top: 2px;
 }
 
-
+body{
+    font-family:"NovaFlat-Regular",Arial, Helvetica, sans-serif;
+}
 @media (max-width:768px) {
     #name{
         display: none;
