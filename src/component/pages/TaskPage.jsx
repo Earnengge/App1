@@ -25,14 +25,15 @@ const [forminput,Setform]=useState();
 
                         <div>
                             <p>1. Follow <a href="">Earnengage on twitter</a></p>
+                            <div className="insertTweetLink">
+                         <label htmlFor="tweet">Tweet Link</label>
+                            <input type="text" name="forminput" id="forminput" onChange={(e)=>{Setform(e.target.value);console.log(forminput)}}  />
+                        </div>
                         </div>
                     </div>
                     :
                     <div>Page only for authenticated users
-                        <div className="insertTweetLink">
-                         <label htmlFor="tweet">Tweet Link</label>
-                            <input type="text" name="forminput" id="forminput" onChange={(e)=>{Setform(e.target.value);console.log(forminput)}}  />
-                        </div>
+                        
                     </div>
             }
         </div>

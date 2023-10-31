@@ -6,17 +6,36 @@
     padding-top: 30px;
 }
 
-.card {
+.cards {
     margin: 50px;
     background-color: #27292a;
     padding: 10px 30px;
     border-radius: 10px;
-    max-width: 500px;
+    min-width: 250px;
+    font-size: 14px;
+    height: fit-content;
+    padding-left: 60px;
+    padding-bottom: 25px;
+    padding-top: 5px;
+    max-width: 100%;
+    box-shadow: 0 10px 40px rgba(0,0,0,.5);
+
     transition: all 0.2s;
+    border: white solid 1px;
+
     width: fit-content;
+    flex-direction: column;
+    display: flex;
+    margin-top: 100px;
+    text-align: start;
+    align-items: center;
+    object-fit:cover;
+    background-size: cover;
+    background-repeat: none;
+    background-image: url("./imagesLogo/card.png");
 }
 
-.card:hover {
+.cards:hover {
     transform: scale(1.1);
     background-color: #2b2d2e;
 }
@@ -24,7 +43,6 @@
 .highlight {
     color: var(--main-color);
 }
-
 
 
 #logo {
