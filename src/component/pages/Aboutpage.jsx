@@ -10,10 +10,7 @@ function AboutPage() {
     
     <HeaderComponent/>
     <Sidebar/>
-    <video autoPlay loop muted className="background-video">
-            <source src={BackgroundVideo} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+   
       <div class="card">
      
 <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 100">

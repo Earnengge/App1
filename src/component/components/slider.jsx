@@ -4,10 +4,9 @@ import BackgroundVideo from "../imagesLogo/video.mp4"; // Update this with the a
 
 
 const VerticalSlider = () => {
-  const slides = [
-  ];
+  const slides = [];
 
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(3);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -18,31 +17,64 @@ const VerticalSlider = () => {
 
     return () => clearInterval(interval);
   }, []);
+
   const [checked, setChecked] = useState(false);
 
-  const toggleChildElements = () => {
-    const fourthChild = document.querySelector('.item:nth-of-type(4)');
-    const fifthChild = document.querySelector('.item:nth-of-type(5)');
-
-    if (checked) {
-      fourthChild.style.display = 'block';
-      fifthChild.style.display = 'block';
-    } else {
-      fourthChild.style.display = 'none';
-      fifthChild.style.display = 'none';
-    }
+  const handleCardClick = (position) => {
+    setCurrentSlide(position);
+  
+    // Remove the 'selected' class from all items
+    document.querySelectorAll('div.item').forEach((item) => {
+      item.classList.remove('selected');
+    });
+  
+    // Add the 'selected' class to the selected item
+    document.querySelector(`div.item:nth-of-type(${position})`).classList.add('selected');
   };
+  
+  const handleCardHover = (position) => {
+    setCurrentSlide(position);
+  };
+
   return (
     <div className='body'>
        
 
-  <input type="radio" name="position"  />
-  <input type="radio" name="position" />
-  <input type="radio" name="position" checked />
-  <input type="radio" name="position" />
-  <input type="radio" name="position" />
+       <input
+        type="radio"
+        name="position"
+        checked={currentSlide === 1}
+        
+        onChange={() => handleCardClick(1)}
+      />
+      <input
+        type="radio"
+        name="position"
+        checked={currentSlide === 2}
+        onChange={() => handleCardClick(2)}
+      />
+      <input
+        type="radio"
+        name="position"
+        
+        checked={currentSlide === 3}
+        onChange={() => handleCardClick(3)}
+      />
+      <input
+        type="radio"
+        name="position"
+        checked={currentSlide === 4}
+        onChange={() => handleCardClick(4)}
+      />
+      <input
+        type="radio"
+        name="position"
+        checked={currentSlide === 5}
+        onChange={() => handleCardClick(5)}
+      />
+      
   <main id="carousel">
-    <div className="item">
+    <div className="item" onClick={() => handleCardClick(3)} onMouseOver={() => handleCardHover(3)}>
     <div className="roundedcard">3</div>
 
       <span id="text">
@@ -52,7 +84,7 @@ const VerticalSlider = () => {
         </h2>
       </span>
     </div>
-    <div className="item">
+    <div className="item" onClick={() => handleCardClick(2)} onMouseOver={() => handleCardHover(2)}>
     <div className="roundedcard">2</div>
 
     <span id="text">
@@ -62,7 +94,7 @@ const VerticalSlider = () => {
         </h2>
       </span>
     </div>
-    <div className="item">
+    <div className="item" onClick={() => handleCardClick(1)} onMouseOver={() => handleCardHover(1)}>
    
     <div className="roundedcard">1</div>
 
@@ -75,7 +107,7 @@ const VerticalSlider = () => {
         </h2>
       </span>
     </div>
-    <div className="item">
+    <div className="item" onClick={() => handleCardClick(4)} onMouseOver={() => handleCardHover(4)}>
           <div className="roundedcard">4</div>
 
     <span id="text">
@@ -85,7 +117,7 @@ const VerticalSlider = () => {
         </h2>
       </span>
     </div>
-    <div className="item">
+    <div className="item" onClick={() => handleCardClick(5)} onMouseOver={() => handleCardHover(5)}>
     <div className="roundedcard">5</div>
 
     <span id="text">

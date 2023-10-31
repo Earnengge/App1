@@ -5,8 +5,10 @@
   grid-template-rows: 500px 100px;
   grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
   align-items: center;
+  margin-left: 20px;
   justify-items: center;
 }
+
 
 main#carousel {
   grid-row: 1 / 2;
@@ -22,6 +24,7 @@ main#carousel {
   transform-style: preserve-3d;
   perspective: 600px;
   --items: 5;
+  margin-bottom: 30px;
   --middle: 3;
   --position: 1;
   pointer-events: none;
@@ -134,4 +137,10 @@ color: black;
   margin-top: -40px;
   margin-left: 40%;
   background-color: black;
+}
+@media(max-width:768px){
+  .body{
+    margin-left: 100px;
+  }
+
 }

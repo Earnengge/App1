@@ -47,7 +47,7 @@ video{
 
 #banner h2{
 font-weight: 500;
-font-family: "NovaFlat-Regular";
+font-family: "DISCOVERY";
 font-size: 38px;
 }
 #banner-text {
@@ -178,7 +178,7 @@ color: #ebebeb;
     
       #banner {
         align-items: center;
-        margin-left: 124px;
+        margin-left: 138px;
         border-top-right-radius: 0px;
         border-top-left-radius: 0px;
         height: 350px;
