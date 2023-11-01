@@ -1,25 +1,31 @@
-<<<<<<< HEAD
-// import { useSocialSignup } from "../../hooks/useSocialSignup";
-import { useState } from "react";
-import { useAuthContext } from "../../context/authContext";
-import "../pages/TaskPage.css"
-import BackgroundVideo from "../imagesLogo/video.mp4"; // Update this with the actual path to your video
-=======
 import { useEffect, useState } from "react";
 import { useAuthContext } from "../../context/authContext";
-import { db } from "../../firebase/config";
-import { collection, addDoc } from "firebase/firestore";
-import firebase from 'firebase/app';
-import "firebase/firestore"
->>>>>>> e7e3fcdb6adbd286305edc7f219b81e1c741650f
+import { collection, addDoc } from "firebase/firestore"; // Import Firestore related functions directly
+import { doc, setDoc, Timestamp } from "firebase/firestore"; // Import other Firestore functions if needed
+import "./TaskPage.css"
+// Initialize Firebase
+const apiKey = "AIzaSyA4ZvhRM8JcPvMD5lo4w6exFH2JiIGJNrM";
+const authDomain = "earnnew-fae96.firebaseapp.com";
+const projectId = "earnnew-fae96";
+const storageBucket = "earnnew-fae96.appspot.com";
+const messagingSenderId = "310277137837";
+const appId = "1:310277137837:web:5beb285acca1237284ed24";
+const measurementId = "G-LTEBXF6SDR";
+
+const firebaseConfig = {
+ apiKey,
+    authDomain,
+    projectId,
+    storageBucket,
+    messagingSenderId,
+    appId,
+    measurementId,
+};
 
 
 const TaskPage = () => {
 
     const { user } = useAuthContext();
-<<<<<<< HEAD
-const [forminput,Setform]=useState();
-=======
     const [tweetText, setTweetText] = useState('');
 
     const handleTweetSubmit = async () => {
@@ -43,15 +49,10 @@ const [forminput,Setform]=useState();
             console.log(error)
         }
     };
->>>>>>> e7e3fcdb6adbd286305edc7f219b81e1c741650f
 
     return (
-        <div style={{ marginBlock: '4rem' }}>
-          
-          <video autoPlay loop muted className="background-video">
-            <source src={BackgroundVideo} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>  {
+        <div style={{ marginBlock: '4rem',marginTop:'9rem' }}>
+            {
                 user ?
                     <div style={{ marginInline: '5rem' }}>
                         <h3>How to participate</h3>
@@ -59,25 +60,19 @@ const [forminput,Setform]=useState();
 
                         <div>
                             <p>1. Follow <a href="">Earnengage on twitter</a></p>
-<<<<<<< HEAD
-                            <div className="insertTweetLink">
-                         <label htmlFor="tweet">Tweet Link</label>
-                            <input type="text" name="forminput" id="forminput" onChange={(e)=>{Setform(e.target.value);console.log(forminput)}}  />
-                        </div>
-=======
 
                             <input style={{padding: '1rem', color: "red"}} type="text" value={tweetText} onChange={(e)=> setTweetText(e.target.value)} />
-                            <button style={{padding: '1rem'}} onClick={handleTweetSubmit}>submit</button>
->>>>>>> e7e3fcdb6adbd286305edc7f219b81e1c741650f
+                            <div className="button">
+                            <button style={{padding: '1rem', }} onClick={handleTweetSubmit}>submit</button>
+
+                            </div>
                         </div>
                     </div>
                     :
-                    <div>Page only for authenticated users
-                        
-                    </div>
+                    <div>Page only for authenticated users</div>
             }
         </div>
     )
 }
 
-export default TaskPage
+export default TaskPage;

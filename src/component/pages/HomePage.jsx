@@ -59,7 +59,7 @@ function Home() {
             </p>
           </div>
           <Testimonials />
-          
+          <Horizontal/>
         </div>
        
       </div>

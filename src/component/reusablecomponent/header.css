@@ -185,14 +185,13 @@ body{
         display:none;
     }
     #header{
-        width: 100vmax;
+        min-width: 100vw;
     }
     #header{
         justify-content: space-between;
-        
     }
     .menu-icon{
-        margin-left: 30%; /* Adjust the margin as needed to control the space between the menu icon and the logo */
+        margin-left: 10px; /* Adjust the margin as needed to control the space between the menu icon and the logo */
 
     }
 }

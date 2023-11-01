@@ -13,6 +13,7 @@ table {
     width: 100%;
     border-spacing: 0;
     border-collapse: collapse;
+    margin-top: 10%;
     border: 1px solid #3f4141;
 }
 .bodyRow {

@@ -13,3 +13,12 @@ input[type="text"]{
 .insertTweetLink{
     margin-top: 40px;
 }
+button{
+    margin-top: 20px;
+    width: 200px ;
+    border-radius: 20px;
+    border-color: white ;
+    color: white;
+    font-family:"NovaFlat-Regular";
+    background-color: green;
+}

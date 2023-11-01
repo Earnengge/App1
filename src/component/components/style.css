@@ -116,9 +116,15 @@
 }
 @media(max-width:768px){
     .HowItworks {
-        margin-top: 50px;
-        padding-right: 49px;
-        padding-left: 140px;
+                  margin-top: 50px;
+            /* padding-right: 49px; */
+            /* padding-left: 140px; */
+            min-width:100vw;
+            
+        
+    }
+    .heading{
+        padding-left: 0px;
     }
     .testimonials{
                 margin-left: 10px;

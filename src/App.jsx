@@ -8,7 +8,7 @@ import AboutPage from './component/pages/Aboutpage';
 import Profile from './component/pages/Profile';
 import Contact from './component/pages/contact';
 import LeaderBoard from './component/pages/LeaderBoardPage';
-import TaskPage from './component/pages/TaskPage.jsx';
+import TaskPage from './component/pages/TaskPage';
 
 
 
@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-
+<div id="changer">
       <Router>
         <Routes>
           <Route
@@ -72,6 +72,7 @@ function App() {
 
         </Routes>
       </Router>
+      </div>
     </>
   )
 }

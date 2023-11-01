@@ -1,9 +1,8 @@
-#root {
+.changer {
     display: flex;
-    justify-content: space-evenly;
+    min-width: 100%;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    padding-top: 30px;
 }
 .cra{
     display: grid;
@@ -68,16 +67,26 @@
 }
 @media (max-width:768px) {
     .cardheading{
-    display: flex;
-    align-items: center;
-       justify-content: center; 
-       flex-wrap: wrap;
-       margin-left: 20px;
-       margin-top: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* flex-wrap: wrap; */
+        width: 493px;
+        margin-left: 47px;
+        margin-top: 70px;
+        
     }
     .cards{
         justify-content: flex-start;
-        min-width: 200px;
+    width: 350px;
         min-height: 300px;
+        margin-top: 10px;
+        
     }
+    .cra {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(341px,1fr));
+        row-gap: 33px;
+    }
+    
 }

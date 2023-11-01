@@ -146,9 +146,13 @@ h2 {
   }
 }
 
-@media (min-width: 700px) {
+@media (maxg-width: 700px) {
+    .bodies{
+        margin-left: 5%;
+    }
   .cardes {
     flex-basis: calc(calc(100% / 3) - 20px);
+    margin-left: 2px;
   }
 
   .cardes:not(:last-child) {

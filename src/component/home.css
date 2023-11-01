@@ -8,6 +8,7 @@ font-family: "NovaFlat-Regular";
     flex-direction: column;
     justify-content: flex-start;
     margin-left: 40px;
+    margin-top: 8%;
     margin-right: 40px;
     padding-top: 10%;
     align-items: start;
@@ -177,15 +178,19 @@ color: #ebebeb;
       min-height: 100%;}
     
       #banner {
-        align-items: center;
-        margin-left: 138px;
-        border-top-right-radius: 0px;
-        border-top-left-radius: 0px;
-        height: 350px;
-        justify-content: center;
-        padding-top:26px;
-        margin-right: 30px;
-    }
+                  align-items: center;
+          /* margin-left: 138px; */
+          border-top-right-radius: 0px;
+          border-top-left-radius: 0px;
+          min-height: 381px;
+          justify-content: center;
+          min-width: 100vw;
+          padding: 0 36px;
+          margin-left: 19px;
+          margin-top: 100px;
+          padding-top: 26px;
+          margin-right: 30px;
+      }
       .boxtwo{
         margin-left: 56px;
         min-width: 250px;
