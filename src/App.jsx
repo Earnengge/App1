@@ -8,7 +8,7 @@ import AboutPage from './component/pages/Aboutpage';
 import Profile from './component/pages/Profile';
 import Contact from './component/pages/contact';
 import LeaderBoard from './component/pages/LeaderBoardPage';
-import TaskPage from './component/pages/TaskPage';
+import TaskPage from './component/pages/TaskPage.jsx';
 
 
 
