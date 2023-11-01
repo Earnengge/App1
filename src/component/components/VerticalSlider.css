@@ -10,6 +10,7 @@
 }
 
 
+
 main#carousel {
   grid-row: 1 / 2;
   grid-column: 1 / 8;
@@ -67,8 +68,10 @@ div.item:nth-of-type(4) {
 }
 div.item:nth-of-type(5) {
   --offset: 5;
+  
   background-color: #e9ff70;
 }
+
 
 input:nth-of-type(1) {
   grid-column: 2 / 3;
@@ -124,7 +127,7 @@ margin-top: 50px;
 color: black;
 }
 
-.roundedcard{
+.roundedcard ,#roundedcard{
 
   border-radius: 50%;
   width: 50px;
@@ -137,6 +140,13 @@ color: black;
   margin-top: -40px;
   margin-left: 40%;
   background-color: black;
+}
+
+#roundedcard{
+  margin-top: -35px;
+  width: 40px;
+  padding: 10px;
+
 }
 @media(max-width:768px){
   .body{

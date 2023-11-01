@@ -5,15 +5,17 @@ import BackgroundVideo from "../imagesLogo/video.mp4"; // Update this with the a
 
 const VerticalSlider = () => {
   const slides = [];
+  const totalSlides = 5;
 
   const [currentSlide, setCurrentSlide] = useState(3);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) =>
-        prevSlide === slides.length - 1 ? 0 : prevSlide + 1
+        prevSlide === totalSlides ? 1 : prevSlide + 1
       );
     }, 7000);
+
 
     return () => clearInterval(interval);
   }, []);
@@ -118,9 +120,10 @@ const VerticalSlider = () => {
       </span>
     </div>
     <div className="item" onClick={() => handleCardClick(5)} onMouseOver={() => handleCardHover(5)}>
-    <div className="roundedcard">5</div>
+    <div id="roundedcard">5</div>
 
     <span id="text">
+
         <h2>
         "After Loosing it all Amidst the darkness, a glimmer of hope appeared on my Twitter feed. One guy was flaunting his new Lamborghini, proudly showcasing screenshots of his latest trades. He was a success story, a beacon of hope in my gloomy journey. Perhaps he could be my savior. I joined his Telegram channels, paying $50 per month to access his trading signals. Desperate for a fresh start, I even borrowed $1000 from a friend to invest and promised to give him a generous 20% return every month. It was a risk, but sometimes, in the unpredictable world of crypto, you had to take chances to turn your losses into gains. Little did I realize that such high returns were unsustainable. Although there were months when I didn't turn a profit, I diligently used my paychecks to fulfill my commitments. As a result of my consistent returns, my friend introduced me to affluent investors. I entered into a contract worth over $10,000, promising investors a 15% return while remitting 2% to my friend who had facilitated the connection. It was undoubtedly a daunting endeavor, but I clung to hope, believing that I could improve my skills.",
 

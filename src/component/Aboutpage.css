@@ -5,47 +5,79 @@
     flex-wrap: wrap;
     padding-top: 30px;
 }
-
+.cra{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(341px,2fr));
+    row-gap: 33px;
+}
 .cards {
     margin: 50px;
     background-color: #27292a;
     padding: 10px 30px;
     border-radius: 10px;
-    min-width: 250px;
+    /* min-width: 250px; */
     font-size: 14px;
-    height: fit-content;
+    /* height: fit-content; */
     padding-left: 60px;
+    width: 500px;
+    min-height: 160px;
     padding-bottom: 25px;
     padding-top: 5px;
-    max-width: 100%;
+    /* max-width: 100%; */
     box-shadow: 0 10px 40px rgba(0,0,0,.5);
-
     transition: all 0.2s;
     border: white solid 1px;
-
-    width: fit-content;
+    /* width: fit-content; */
     flex-direction: column;
-    display: flex;
+    /* display: flex; */
     margin-top: 100px;
     text-align: start;
     align-items: center;
-    object-fit:cover;
+    object-fit: cover;
     background-size: cover;
     background-repeat: none;
-    background-image: url("./imagesLogo/card.png");
+    background-image: url("/src/component/imagesLogo/card.png");
 }
 
 .cards:hover {
     transform: scale(1.1);
     background-color: #2b2d2e;
 }
+.cardheading h2{
+    font-family: "DISCOVERY";
+    font-weight: 200;
+}
 
 .highlight {
     color: var(--main-color);
+}
+.cardheading{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-left: 5% ;
+    font-size: 15px;
+    justify-items: center;
 }
 
 
 #logo {
     padding: 30px 0;
     width: 100%;
+}
+@media (max-width:768px) {
+    .cardheading{
+    display: flex;
+    align-items: center;
+       justify-content: center; 
+       flex-wrap: wrap;
+       margin-left: 20px;
+       margin-top: 70px;
+    }
+    .cards{
+        justify-content: flex-start;
+        min-width: 200px;
+        min-height: 300px;
+    }
 }

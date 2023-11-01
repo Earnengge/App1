@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "../home.css";
 import VerticalSlider from "../components/slider"
 import Logoimage from "../imagesLogo/logo1.png";
+import Horizontal from "../components/horizontal";
 import { Link } from "react-router-dom";
 import Testimonials from "../components/how";
 import BackgroundVideo from "../imagesLogo/video.mp4"; // Update this with the actual path to your video
@@ -58,6 +59,7 @@ function Home() {
             </p>
           </div>
           <Testimonials />
+          
         </div>
        
       </div>

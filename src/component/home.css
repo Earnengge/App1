@@ -183,7 +183,7 @@ color: #ebebeb;
         border-top-left-radius: 0px;
         height: 350px;
         justify-content: center;
-        padding-top:10px;
+        padding-top:26px;
         margin-right: 30px;
     }
       .boxtwo{
@@ -201,7 +201,7 @@ height: 50%;
       }
       #banner h2 {
         font-size: 23px;
-        font-weight: 600;
+        font-weight: 500;
         margin-left: 23px;
         margin-bottom: -4px;
     }

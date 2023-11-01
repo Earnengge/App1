@@ -1,7 +1,11 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import "./sidebar.css";
 import { Link } from "react-router-dom";
-
+import {
+  twitterProvider,
+} from "../../firebase/config";
+import { useSocialSignup } from "../../hooks/useSocialSignup";
+import { useAuthContext } from "../../context/authContext";
 function Sidebar({isOpen}) {
    
         const handleLinkClick = (e) => {
@@ -9,7 +13,10 @@ function Sidebar({isOpen}) {
           e.stopPropagation();
         };
       
-
+        const twitter = useSocialSignup(twitterProvider);
+        const { user } = useAuthContext();
+      
+        useEffect(() => console.log(user), [user]);
   return (
     <>
 
@@ -41,6 +48,15 @@ TNT Games
 <Link id="page-leaderboard" to="/leaderBoard"  onClick={handleLinkClick}>Wizards Leaderboards</Link>
 </div>
 </div>
+<Link id="social">
+          {
+            user ? <span style={{marginInlineEnd: '1rem'}}>{user?.displayName}</span> : <span onClick={twitter.signInWithSocial}  style={{ color: "white" }}>Get started</span>
+          }
+
+         
+            
+         
+        </Link>
 <Link to="/taskPage" onClick={handleLinkClick}> See Task</Link>
 <Link id="page-about" to="/about"  onClick={handleLinkClick}>About</Link>
 <Link id="page-about" to="/Profile"  onClick={handleLinkClick}>Profile</Link>

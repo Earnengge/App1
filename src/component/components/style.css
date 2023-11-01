@@ -7,7 +7,7 @@
         grid-template-columns: repeat(2, minmax(341px,2fr));
         row-gap: 33px;
         /* grid-gap: 30px; */
-        column-gap: 0;
+        column-gap: 10px;
         font-family: "NovaFlat-Regular";
   
 }
@@ -16,7 +16,7 @@
     position: relative;
     display: flex;
     margin: 0 auto;
-    margin-left :10px;
+    margin-left :5px;
     font-family: "NovaFlat-Regular";
     padding: 20px;
     box-sizing: border-box;
@@ -108,7 +108,7 @@
     
   
         margin-top: 50px;
-        padding-left: 88px;
+        padding-left: 40px;
         padding-right: 58px;
         font-family: "NovaFlat-Regular";
    

@@ -29,7 +29,7 @@ const Testimonials = () => {
       occupation: 'Website Designer',
     },
     {
-        imgSrc: 'Climbing the Web3 Leaderboard',
+        imgSrc: 'Active Twitter Engagement',
         text: 'Your journey doesn\'t end with sharing your stories. Once your Twitter account is connected, actively engage with your web3-focused followers. Every like, retweet, and comment you make on Twitter related to web3 contributes to your web3 journey on EarnEngage. It\'s not only about the content you create but also the interactions you have. Engaging with others in the web3 community not only enhances your experience but also increases your chances of climbing higher on our leaderboard.',
       name: 'Someone Famous',
       occupation: 'Website Designer',
