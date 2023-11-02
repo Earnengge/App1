@@ -6,7 +6,6 @@ import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import Sidebar from './component/reusablecomponent/Sidebar';
 import AboutPage from './component/pages/Aboutpage';
 import Profile from './component/pages/Profile';
-import Contact from './component/pages/contact';
 import LeaderBoard from './component/pages/LeaderBoardPage';
 import TaskPage from './component/pages/TaskPage';
 
@@ -56,12 +55,6 @@ function App() {
             }
           />
 
-          <Route path='/contact' element={
-            <>
-              <HeaderComponent />
-              <Contact />
-            </>}
-          />
 
           <Route path='/LeaderBoard' element={
             <>

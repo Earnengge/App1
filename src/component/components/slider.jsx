@@ -41,7 +41,6 @@ const VerticalSlider = () => {
   return (
     <div className='body'>
        
-
        <input
         type="radio"
         name="position"
@@ -76,6 +75,7 @@ const VerticalSlider = () => {
       />
       
   <main id="carousel">
+
     <div className="item" onClick={() => handleCardClick(3)} onMouseOver={() => handleCardHover(3)}>
     <div className="roundedcard">3</div>
 

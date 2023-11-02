@@ -1,27 +1,40 @@
 import React, { useEffect } from "react";
 import "../home.css";
 import VerticalSlider from "../components/slider"
-import Logoimage from "../imagesLogo/logo1.png";
+import Logoimage from "../imagesLogo/ii.png";
 import Horizontal from "../components/horizontal";
 import { Link } from "react-router-dom";
 import Testimonials from "../components/how";
 import BackgroundVideo from "../imagesLogo/video.mp4"; // Update this with the actual path to your video
-
+import Footer from  "../pages/footer"
 function Home() {
   return (
     <>
-      <div>
+      <div >
         
 
         <div id="banner" className="video-background">
           <video autoPlay loop muted className="background-video">
-            <source src={BackgroundVideo} type="video/mp4" />
+          <source src={BackgroundVideo} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
 
          
           <div className="headertwo">
-          <h2>Are you ready to embark on a limitless crypto adventure with EarnEngage?</h2>
+          
+  <div className="heading">
+  <h2>
+    Ready 
+    for a crypto adventure with EarnEngage? </h2></div>
+
+
+
+
+
+
+            <div> 
+</div>
+          <h2></h2>
           </div>
           <div className="boxtwo">
             
@@ -45,12 +58,16 @@ function Home() {
                 src={Logoimage}
                 loading="lazy"
                 alt="company-logo"
-                className="Logo"
+                className="Logos"
               />
             </div>
           </div>
         </div>
+        <div className="heading" >
+        <h1 > Explore my story that sparked EarnEngage's creation.</h1>
+
        <VerticalSlider/>
+       </div>
         <div className="HowItworks">
           <div className="heading">
             <h1>How it works</h1>
@@ -61,9 +78,10 @@ function Home() {
             </p>
           </div>
           <Testimonials />
+          
           <Horizontal/>
         </div>
-       
+       <Footer/>
       </div>
     </>
   );

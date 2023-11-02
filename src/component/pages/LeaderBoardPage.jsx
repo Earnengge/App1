@@ -13,6 +13,9 @@ function LeaderBoard() {
   }, []);
 
  console.log(jsonData)
+ const calculateTotalPoints = (replies, retweets, likes) => {
+  return replies * 3 + retweets * 2 + likes * 3;
+};
   return (
     <>
     <div id="main">
@@ -47,10 +50,17 @@ function LeaderBoard() {
             "N/A"
           )}
         </td>
-        <td>{item.reply_count}</td>
-        <td>{item.reply_count}</td>
+        <td>{item.reply_count }</td>
+       
         <td>{item.retweet_count}</td>
         <td>{item.favorite_count}</td>
+        <td>
+                      {calculateTotalPoints(
+                        item.reply_count,
+                        item.retweet_count,
+                        item.favorite_count
+                      )}
+                    </td>
       </tr>
     ))
   : (

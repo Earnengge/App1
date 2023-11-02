@@ -1,9 +1,0 @@
-.containerContact{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-}
-.secondContact{
-    margin: 100px 20px;
-}

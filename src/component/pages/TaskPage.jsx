@@ -33,7 +33,7 @@ const TaskPage = () => {
     };
 
     return (
-        <div style={{ marginBlock: '4rem',marginTop:'9rem' }}>
+        <div style={{ marginBlock: '4rem',marginTop:'20%',display:"flex",alignContent:"center",justifyContent:"center" }}>
             {
                 user ?
                     <div style={{ marginInline: '5rem' }}>
@@ -51,7 +51,7 @@ const TaskPage = () => {
                         </div>
                     </div>
                     :
-                    <div>Page only for authenticated users</div>
+                    <div style={{display:"flex", fontSize:"30px",justifyContent:"center",alignContent:"center"}}>Page only for authenticated users</div>
             }
         </div>
     )

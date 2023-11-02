@@ -118,21 +118,28 @@ width: 100vw !important;
 }
 
 .cardess::-webkit-scrollbar {
-  height: 12px;
+  width: 12px;
 }
 
 .cardess::-webkit-scrollbar-thumb,
 .cardess::-webkit-scrollbar-track {
-  border-radius: 92px;
+  border-radius: 6px;
 }
 
 .cardess::-webkit-scrollbar-thumb {
   background: var(--darkred);
+  transition: background 0.2s; /* Add a transition for hover effect */
 }
 
 .cardess::-webkit-scrollbar-track {
   background: var(--thumb);
 }
+
+/* Add a hover effect to the scrollbar thumb */
+.cardess:hover::-webkit-scrollbar-thumb {
+  background: green;
+}
+
 
 @media (min-width: 500px) {
   .cardes {

@@ -38,12 +38,12 @@ padding: 0;
   }
 
 #header {
-    background-color: black;
+    background-color: rgb(40, 36, 36);
     font-family: "NovaFlat-Regular", sans-serif;
     height: 77px;
     display: flex;
     width: 100%;
-    box-shadow: -4px 2px 5px 0px #fff;
+    box-shadow: -4px 2px 5px 0px #271f1f;
         position: fixed;
     top: 0;
     font-family: "Quicksand", sans-serif;

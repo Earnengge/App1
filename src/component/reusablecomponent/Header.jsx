@@ -4,6 +4,8 @@ import Sidebar from "./Sidebar";
 import logo from "../imagesLogo/logo5.png"
 import menu from "../imagesLogo/menu.png"
 import close from "../imagesLogo/letter-x.png"
+import FollowMeModal from "../components/followComponent"; 
+
 import {
   twitterProvider,
 } from "../../firebase/config";
@@ -16,11 +18,18 @@ function HeaderComponent() {
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
+  const [showFollowModal, setShowFollowModal] = useState(true); // State for modal
 
   const twitter = useSocialSignup(twitterProvider);
   const { user } = useAuthContext();
 
   useEffect(() => console.log(user), [user]);
+
+  // Function to open the Follow Me modal
+  
+  // Function to close the Follow Me modal
+    // Function to close the Follow Me modal
+   
 
   return (
     <>
@@ -34,13 +43,15 @@ function HeaderComponent() {
         </div>
 
 <img src={logo} alt="logo" width="70px" height="70px" className="img" />
+      
         <div id="social">
           {
-            user ? <span style={{marginInlineEnd: '1rem'}}>{user?.displayName}</span> : <button onClick={twitter.signInWithSocial} className="buy-button" style={{ color: "white" }}>Get started</button>
+            user ?      ( <div className="wrap" style={{display:"flex",alignContent:"center",justifyContent:"center",}}><img className="img-responsive" loading="lazy" src={user?.photoURL} style={{marginRight:"10px"}} />
+            <span style={{marginInlineEnd: '1rem'}}>{user?.displayName}</span></div>  ) : <button onClick={twitter.signInWithSocial} className="buy-button" style={{ color: "white" }}>Connect Twitter</button>
           }
 
          
-            
+{showFollowModal && <FollowMeModal  />} {/* Render the modal when showFollowModal is true */}
          
         </div>
       </div>

@@ -26,16 +26,15 @@ body {
   #sidebar.expanded {
     left: 0;
     height: 100%;
-    background-color:black;
-    border-right: 1px solid #f1f1f1;
+    background-color: rgba(40, 36, 36, 0.926);
     box-sizing: border-box;
     box-shadow: inset -5px 0 10px -5px rgba(0, 0, 0, 0.5);
-    max-width: 150px;
+    max-width: 400px;
         font-family: "NovaFlat-Regular";
 
     overflow: hidden;
     position: fixed;
-    top: 70px;
+    top: 76px;
     z-index: 50;
     /* Add any o
     ther styles for the expanded state */
