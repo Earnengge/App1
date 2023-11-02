@@ -194,4 +194,11 @@ body{
         margin-left: 10px; /* Adjust the margin as needed to control the space between the menu icon and the logo */
 
     }
+    .img{
+        width: 60px;
+        height: 60px;
+        margin-right: auto;
+        margin-left: 38vw;
+  
+    }
 }

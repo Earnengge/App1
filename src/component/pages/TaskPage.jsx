@@ -3,24 +3,6 @@ import { useAuthContext } from "../../context/authContext";
 import { collection, addDoc } from "firebase/firestore"; // Import Firestore related functions directly
 import { doc, setDoc, Timestamp } from "firebase/firestore"; // Import other Firestore functions if needed
 import "./TaskPage.css"
-// Initialize Firebase
-const apiKey = "AIzaSyA4ZvhRM8JcPvMD5lo4w6exFH2JiIGJNrM";
-const authDomain = "earnnew-fae96.firebaseapp.com";
-const projectId = "earnnew-fae96";
-const storageBucket = "earnnew-fae96.appspot.com";
-const messagingSenderId = "310277137837";
-const appId = "1:310277137837:web:5beb285acca1237284ed24";
-const measurementId = "G-LTEBXF6SDR";
-
-const firebaseConfig = {
- apiKey,
-    authDomain,
-    projectId,
-    storageBucket,
-    messagingSenderId,
-    appId,
-    measurementId,
-};
 
 
 const TaskPage = () => {
@@ -36,7 +18,7 @@ const TaskPage = () => {
                 const docRef = await addDoc(collection(db, 'tweets'), {
                     twit_link: tweetText,
                     userid: user.uid,
-                    timestamp: firebase.firestore.FieldValue.serverTimestamp()
+                    // timestamp: firebase.firestore.FieldValue.serverTimestamp()
                   });
                   console.log("Document written with ID: ", docRef.id);
 

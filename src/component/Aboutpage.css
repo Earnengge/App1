@@ -17,6 +17,7 @@
     /* min-width: 250px; */
     font-size: 14px;
     /* height: fit-content; */
+    max-width: 73%;
     padding-left: 60px;
     width: 500px;
     min-height: 160px;
@@ -39,7 +40,7 @@
 }
 
 .cards:hover {
-    transform: scale(1.1);
+    transform: scale(0.8);
     background-color: #2b2d2e;
 }
 .cardheading h2{
@@ -67,20 +68,23 @@
 }
 @media (max-width:768px) {
     .cardheading{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        /* flex-wrap: wrap; */
-        width: 493px;
-        margin-left: 47px;
-        margin-top: 70px;
+                    display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 350px;
+            margin-left: 26px;
+            margin-top: 100px;
+     
+    
         
     }
     .cards{
         justify-content: flex-start;
-    width: 350px;
+    width: 310px;
         min-height: 300px;
-        margin-top: 10px;
+        margin-top: -4px;
+        margin-left: 20px;
         
     }
     .cra {

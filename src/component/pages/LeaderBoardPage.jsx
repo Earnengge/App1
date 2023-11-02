@@ -20,18 +20,19 @@ function LeaderBoard() {
     <table>
 <thead>
 <tr>
-<th onclick="sortTable(0)"># <span style={{color: "lightgray"}}>↓</span></th>
-<th onclick="sortTable(1)">User <span style={{color: "lightgray"}}>↕</span></th>
-<th onclick="sortTable(2)" id="stat-column">Replies <span style={{color: "lightgray"}}>↕</span></th>
-<th onclick="sortTable(3)">Retweets<span style={{color: "lightgray"}}>↕</span></th>
-<th onclick="sortTable(4)">likes<span style={{color: "lightgray"}}>↕</span></th>
+<th onclick="sortTable(0)"># <span style={{color: "lightgray"}}></span></th>
+<th onclick="sortTable(1)">User <span style={{color: "lightgray"}}></span></th>
+<th onclick="sortTable(2)" id="stat-column">Replies <span style={{color: "lightgray"}}></span></th>
+<th onclick="sortTable(3)">Retweets<span style={{color: "lightgray"}}></span></th>
+<th onclick="sortTable(4)">likes<span style={{color: "lightgray"}}></span></th>
+<th onclick="sortTable(4)">points <span style={{color: "lightgray"}}></span></th>
 </tr>
 </thead>
 <tbody>
 
 {jsonData !== null
   ? jsonData.map((item, index) => (
-      <tr key={index}>
+      <tr key={index} className="bodyRow">
         <td>{index + 1}</td>
         <td>
           {item.user && item.user.screen_name ? (
@@ -46,6 +47,7 @@ function LeaderBoard() {
             "N/A"
           )}
         </td>
+        <td>{item.reply_count}</td>
         <td>{item.reply_count}</td>
         <td>{item.retweet_count}</td>
         <td>{item.favorite_count}</td>

@@ -9,14 +9,20 @@ html {
     padding: 25px 0;
     position: relative;
 }
+th{
+    padding-left: 10px;
+}
+table td:hover {
+    transform: scale(1.3); /* Scale the cell on hover */
+  }
 table {
     width: 100%;
     border-spacing: 0;
     border-collapse: collapse;
-    margin-top: 10%;
+    margin-top: 20%;
     border: 1px solid #3f4141;
 }
-.bodyRow {
+.bodyRow{ 
     transition: all 0.2s;
     background-color: #27292a;
     border: 1px solid #3f4141;
@@ -25,6 +31,7 @@ table {
 td {
     transition: background-color 0.2s;
     padding: 0.4em;
+    border:1px solid white;
 }
 td a{
     color:white

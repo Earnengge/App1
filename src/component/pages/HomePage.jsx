@@ -11,6 +11,8 @@ function Home() {
   return (
     <>
       <div>
+        
+
         <div id="banner" className="video-background">
           <video autoPlay loop muted className="background-video">
             <source src={BackgroundVideo} type="video/mp4" />

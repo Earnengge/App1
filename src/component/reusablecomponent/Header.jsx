@@ -33,7 +33,7 @@ function HeaderComponent() {
           <Sidebar isOpen={isOpen} />
         </div>
 
-<img src={logo} alt="logo" width="70px" height="70px" />
+<img src={logo} alt="logo" width="70px" height="70px" className="img" />
         <div id="social">
           {
             user ? <span style={{marginInlineEnd: '1rem'}}>{user?.displayName}</span> : <button onClick={twitter.signInWithSocial} className="buy-button" style={{ color: "white" }}>Get started</button>

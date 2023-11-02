@@ -11,9 +11,9 @@
   font: 16px / 24px "Rubik", sans-serif;
   color: var(--white);
   background: var(--platinum);
- margin-left: 10%;
  margin-top: 10%;
  margin-bottom: 10%;
+text-align: center;
 width: 100vw !important;
 }
 
@@ -23,10 +23,8 @@ width: 100vw !important;
   margin: 0 auto;
 }
 
-h2 {
-  font-size: 32px;
-  margin-bottom: 1em;
-}
+
+
 .card-container {
     max-width: 100%;
     overflow-x: auto; /* Add horizontal scrollbar when needed */
@@ -146,7 +144,7 @@ h2 {
   }
 }
 
-@media (maxg-width: 700px) {
+@media (max-width: 700px) {
     .bodies{
         margin-left: 5%;
     }
@@ -155,6 +153,7 @@ h2 {
     margin-left: 2px;
   }
 
+  
   .cardes:not(:last-child) {
     margin-right: 30px;
   }
