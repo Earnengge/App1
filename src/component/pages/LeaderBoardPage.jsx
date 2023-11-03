@@ -1,6 +1,7 @@
 import React, { useEffect,useState } from "react"
 import "./leaderBoard.css"
 import Data from "./dataset.json"
+import { Link } from "react-router-dom";
 function LeaderBoard() {
    const [jsonData, setJsonData] = useState(null);
 
@@ -39,13 +40,13 @@ function LeaderBoard() {
         <td>{index + 1}</td>
         <td>
           {item.user && item.user.screen_name ? (
-            <a
-              href={`https://twitter.com/${item.user.screen_name}`}
+            <Link
+            to="/Profile/${item.user.screen_name}"
               target="_blank"
               rel="noopener noreferrer"
             >
               {item.user?.name}
-            </a>
+            </Link>
           ) : (
             "N/A"
           )}

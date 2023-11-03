@@ -16,8 +16,12 @@
   /* Media query for mobile devices */
   @media (max-width: 768px) {
     .register-container {
-      grid-template-columns: 1fr; /* Single column on mobile */
-    }
+      grid-template-columns: 1fr;
+      display: flex;
+      margin-right: -5px;
+      align-items: center;
+      flex-direction: column;
+  }
   }
   
   .form-group {

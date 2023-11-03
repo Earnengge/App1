@@ -85,7 +85,7 @@ video{
 
 #banner h2{
 font-weight: 300;
-font-family: "DISCOVERY";
+font-family: "lobster";
 font-size: 30px;
 }
 #banner-text {
@@ -195,7 +195,7 @@ h3 {
   }
   
   .buy-button {
-    background-color: #2bfc7d;
+    background-color: #04651c;
     color: #ebebeb;
     margin-right: 10px; /* Add some spacing between the buttons */
   }
@@ -208,13 +208,13 @@ h3 {
   }
   
    .sell-button:hover {
-color: #ebebeb;
+color: white;
     background-color: #044b16; /* Light blue color when hovered */
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4); /* Realistic shadow on hover */
   }
   .buy-button:hover{
     background-color: #044b16;
-    color: #f1f1f1; /* Light blue color when hovered */
+    color: white; /* Light blue color when hovered */
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4); /* Realistic shadow on hover */
  
   }
@@ -223,6 +223,7 @@ color: #ebebeb;
     justify-content: center;
     flex-direction: column;
     margin-top: 50px;
+    /* padding-left: 49px; */
     margin-bottom: 20px;
     flex-wrap: wrap;
     align-items: center;
@@ -275,7 +276,8 @@ height: 50%;
       #banner h2 {
         font-size: 23px;
         font-weight: 500;
-        margin-left: 23px;
+        text-align:center;
+        margin-left: -13px;
         margin-bottom: -4px;
     }
     .slider-container {

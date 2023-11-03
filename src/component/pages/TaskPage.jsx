@@ -18,6 +18,7 @@ const TaskPage = () => {
                 const docRef = await addDoc(collection(db, 'tweets'), {
                     twit_link: tweetText,
                     userid: user.uid,
+                    username:user?.displayName
                     // timestamp: firebase.firestore.FieldValue.serverTimestamp()
                   });
                   console.log("Document written with ID: ", docRef.id);
@@ -38,10 +39,21 @@ const TaskPage = () => {
                 user ?
                     <div style={{ marginInline: '5rem' }}>
                         <h3>How to participate</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, repellat quasi alias molestias, voluptatum aliquid porro tempore quae vel sit nobis culpa cum neque eum esse et laboriosam possimus? Ad.</p>
+                        <ol>
+  <li>Go to Twitter.</li>
+  <li>Make a tweet of your choice.</li>
+  <li>Tag EarnEngage on X formerly twitter  with @ so we can see it.</li>
+  <li>Use our hashtags:
+    <ul>
+      <li>#EarnEngage</li>
+      <li>#SuccessIsSure</li>
+      <li>#SiS</li>
+    </ul>
+  </li>
+  <li>Copy and paste the retweet link below.</li>
+</ol>
 
                         <div>
-                            <p>1. Follow <a href="">Earnengage on twitter</a></p>
 
                             <input style={{padding: '1rem', color: "red"}} type="text" value={tweetText} onChange={(e)=> setTweetText(e.target.value)} />
                             <div className="button">

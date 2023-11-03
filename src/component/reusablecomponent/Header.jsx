@@ -51,9 +51,10 @@ function HeaderComponent() {
           }
 
          
-{showFollowModal && <FollowMeModal  />} {/* Render the modal when showFollowModal is true */}
+{/* Render the modal when showFollowModal is true */}
          
         </div>
+        {showFollowModal && <FollowMeModal  />} 
       </div>
 
     </>

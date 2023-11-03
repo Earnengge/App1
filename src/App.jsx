@@ -37,7 +37,7 @@ function App() {
               </>} />
 
           <Route
-            path='/profile'
+          path="/Profile/:username"
             element={
               <>
                 <HeaderComponent />

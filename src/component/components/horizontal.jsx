@@ -11,7 +11,7 @@ function Horizontal() {
 <div className="card-container">
   <ul class="cardess">
     <li class="cardes">
-    <div className="roundedcards">1</div>
+    <div className="roundedcards">Q4</div>
 
         
       <div>
@@ -26,7 +26,7 @@ In Q4 2023, we'll unveil the EarnEngage website, marking the start of our web3 s
       </div>
     </li>
     <li class="cardes">
-    <div className="roundedcards">2</div>
+    <div className="roundedcards">Q4</div>
       <div>
         <h3 class="cardes-title">Marketing and Fair Launch:</h3>
         <div class="cardes-content">
@@ -38,8 +38,10 @@ In Q4 2023, we'll unveil the EarnEngage website, marking the start of our web3 s
      Q4 2023
       </div>
     </li>
+        <div className="vertical-divider"></div>
+
     <li class="cardes">
-    <div className="roundedcards">3</div>
+    <div className="roundedcards">Q4</div>
       <div>
         <h3 class="cardes-title">Community Engagement: </h3>
         <div class="cardes-content">
@@ -51,7 +53,7 @@ In Q4 2023, we'll unveil the EarnEngage website, marking the start of our web3 s
       </div>
     </li>
     <li class="cardes">
-    <div className="roundedcards">4</div>
+    <div className="roundedcards">Q4</div>
       <div>
         <h3 class="cardes-title">Marketing Campaigns</h3>
         <div class="cardes-content">
@@ -66,7 +68,7 @@ In Q4 2023, we'll unveil the EarnEngage website, marking the start of our web3 s
     
     <li class="cardes">
       <div>
-      <div className="roundedcards">5</div>
+      <div className="roundedcards">Q4</div>
         <h3 class="cardes-title">Burning Event:</h3>
         <div class="cardes-content">
           <p>We'll reduce token supply to enhance scarcity and utility for long-term value.</p>
@@ -77,7 +79,7 @@ In Q4 2023, we'll unveil the EarnEngage website, marking the start of our web3 s
       </div>
     </li>
     <li class="cardes">
-    <div className="roundedcards">6</div>
+    <div className="roundedcards">Q4</div>
       <div>
         <h3 class="cardes-title">Weekly Rewards:</h3>
         <div class="cardes-content">
@@ -89,7 +91,7 @@ In Q4 2023, we'll unveil the EarnEngage website, marking the start of our web3 s
       </div>
     </li>
     <li class="cardes">
-    <div className="roundedcards">7</div>
+    <div className="roundedcards">Q4</div>
 
       <div>
         <h3 class="cardes-title">Market Cap Goal: </h3>
@@ -102,7 +104,7 @@ In Q4 2023, we'll unveil the EarnEngage website, marking the start of our web3 s
       </div>
     </li>
     <li class="cardes">
-    <div className="roundedcards">8</div>
+    <div className="roundedcards">Q1</div>
 
       <div>
         <h3 class="cardes-title">Scholarship Award: </h3>
@@ -115,7 +117,7 @@ In Q4 2023, we'll unveil the EarnEngage website, marking the start of our web3 s
       </div>
     </li>
     <li class="cardes">
-    <div className="roundedcards">9</div>
+    Q1<div className="roundedcards">9</div>
 
       <div>
         <h3 class="cardes-title">

@@ -28,9 +28,7 @@ function Home() {
             <div className="headertwo">
           
           <div className="heading">
-          <h2>
-            Ready 
-            for a crypto adventure with EarnEngage? </h2></div>
+          <h2>Are you ready to embark on a limitless crypto adventure with EarnEngage?</h2></div>
         
         
         
@@ -66,10 +64,11 @@ function Home() {
           </div>
         </div>
         <div className="heading" >
-        <h1 > Explore my story that sparked EarnEngage's creation.</h1>
+        <h1 > Explore my story that sparked EarnEngages creation.</h1>
 
        <VerticalSlider/>
        </div>
+       <Footer/>
         <div className="HowItworks">
           <div className="heading">
             <h1>How it works</h1>

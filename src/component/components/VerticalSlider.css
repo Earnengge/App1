@@ -75,6 +75,7 @@ div.item:nth-of-type(5) {
 
 input:nth-of-type(1) {
   grid-column: 2 / 3;
+
   grid-row: 2 / 3;
 }
 input:nth-of-type(1):checked ~ main#carousel {
@@ -87,6 +88,10 @@ input:nth-of-type(2) {
 }
 input:nth-of-type(2):checked ~ main#carousel {
   --position: 2;
+}
+input[type="radio"]{
+  color: green;
+  background-color: green;
 }
 
 input:nth-of-type(3) {
@@ -112,6 +117,7 @@ input:nth-of-type(5) {
 input:nth-of-type(5):checked ~ main#carousel {
   --position: 5;
 }
+
 #text{
   display: flex;
   align-items: center;

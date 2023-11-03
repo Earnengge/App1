@@ -47,7 +47,6 @@ Tasks
 <Link to="/taskPage" onClick={handleLinkClick}> Join Leaderboard</Link>
 
 <Link id="page-leaderboard" to="/leaderBoard"  onClick={handleLinkClick}> Leaderboard</Link>
-<a id="page-playercount" href="/playercount"  onClick={handleLinkClick}>LaunchPad</a>
 
 </div>
 </div>
@@ -60,6 +59,8 @@ Tasks
             
          
         </Link>
+        <a id="page-playercount" href="/playercount"  onClick={handleLinkClick}>LaunchPad</a>
+
 <Link id="page-about" to="/about"  onClick={handleLinkClick}>About</Link>
 <Link id="page-about" to="/Profile"  onClick={handleLinkClick}>Profile</Link>
 </div>

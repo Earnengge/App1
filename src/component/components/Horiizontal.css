@@ -118,7 +118,7 @@ width: 100vw !important;
 }
 
 .cardess::-webkit-scrollbar {
-  width: 12px;
+  width: 3px;
 }
 
 .cardess::-webkit-scrollbar-thumb,
@@ -139,6 +139,7 @@ width: 100vw !important;
 .cardess:hover::-webkit-scrollbar-thumb {
   background: green;
 }
+
 
 
 @media (min-width: 500px) {

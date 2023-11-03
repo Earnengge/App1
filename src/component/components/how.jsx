@@ -24,7 +24,7 @@ const Testimonials = () => {
     },
     {
       imgSrc: 'Sharing Your Stories',
-      text: 'EarnEngage celebrates your unique experiences in the web3 world. Whether you\'ve uncovered hidden gems in the crypto space or you\'re just embarking on your digital journey, your stories matter. Share your web3 experiences, from the everyday positivity to the awe-inspiring moments. It\'s not just about the milestones but also the daily interactions that make web3 special. Every story you share adds to the vibrancy of our community, inspiring and connecting us all.',
+      text: 'EarnEngage celebrates your unique experiences in the web3 world. Whether you\'ve uncovered hidden gems in the crypto space or you\'re just embarking on your digital journey, your stories matter. Share your web3 experiences, from the everyday positivity to the awe-inspiring moments.',
       name: 'Someone Famous',
       occupation: 'Website Designer',
     },

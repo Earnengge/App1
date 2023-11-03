@@ -7,23 +7,36 @@ function FollowMeModal() {
   const [closeTimer, setCloseTimer] = useState(null);
   const [showFollowModal, setShowFollowModal] = useState(true); // State for modal
 
+  // Check if the user has already followed
+  const hasUserFollowed = localStorage.getItem("userFollowed") === "true";
+
   const handleFollowClick = () => {
-    // Set the loading state to true
-    setIsFollowing(true);
-
-    // Simulate an API call or any asynchronous operation (e.g., following on Twitter)
-    setTimeout(() => {
-      // You can also perform the actual "follow" operation with your API here
-
-      // After the operation is complete, you can set the loading state back to false and close the modal
+          setIsFollowing(true);
+    // If the user hasn't followed, proceed
+    if (!hasUserFollowed) {
+      // Set the loading state to true
       setIsFollowing(true);
-     
-    }, 2000); // Simulate a 2-second operation, you can adjust the duration
+
+      // Simulate an API call or any asynchronous operation (e.g., following on Twitter)
+      setTimeout(() => {
+        // You can also perform the actual "follow" operation with your API here
+
+        // After the operation is complete, you can set the loading state back to false and close the modal
+        setIsFollowing(true);
+
+        // Set a flag in localStorage to indicate that the user has followed
+        localStorage.setItem("userFollowed", "true");
+      }, 1000); // Simulate a 2-second operation, you can adjust the duration
+    } else {
+      // User has already followed, close the modal
+    }
 
     // Start a timer to automatically close the modal after 2 minutes
     const timer = setTimeout(() => {
+      setIsFollowing(true);
+
       setShowFollowModal(false);
-    }, 20000); // 2 minutes in milliseconds
+    }, 1000); // 2 minutes in milliseconds
     setCloseTimer(timer);
   };
 
@@ -52,7 +65,7 @@ function FollowMeModal() {
           ) : (
             <Link to="https://x.com/EarnEngageCoin?s=20" target="_blank">
               <button className="follow-button" onClick={handleFollowClick}>
-Follow EarnEngage on Twitter
+                Follow EarnEngage on Twitter
               </button>
             </Link>
           )}

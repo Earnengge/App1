@@ -19,7 +19,7 @@ const ContactForm = () => {
         </div>
         <div className="row">
         <div className="form-group">
-          <label htmlFor="ethAddress">Arbitrum Eth Address</label>
+          <label htmlFor="ethAddress">Binance Smartchain Address</label>
           <input type="text" id="ethAddress" name="ethAddress" placeholder="Your Eth Address" />
         </div>
         <div className="form-group">
