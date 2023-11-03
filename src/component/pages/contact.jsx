@@ -20,7 +20,7 @@ const ContactForm = () => {
         <div className="row">
         <div className="form-group">
           <label htmlFor="ethAddress">Binance Smartchain Address</label>
-          <input type="text" id="ethAddress" name="ethAddress" placeholder="Your Eth Address" />
+          <input type="text" id="ethAddress" name="ethAddress" placeholder="Your Binance Smart Chain Address" />
         </div>
         <div className="form-group">
           <label htmlFor="message">Message for Us</label>

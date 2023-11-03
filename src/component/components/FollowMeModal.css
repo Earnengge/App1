@@ -14,6 +14,9 @@
   /* Add this to your FollowMeModal.css or a new CSS file */
 
 /* Spinner container */
+button{
+
+}
 .spinner {
     display: inline-block;
     width: 40px;
@@ -35,6 +38,7 @@
   .modal-content {
     background: #fff;
     padding: 20px;
+
     border-radius: 8px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -51,14 +55,14 @@
   }
   
   .follow-button {
-    background: #1da1f2;
-    color: #fff;
+    color: #ffff;
     border: none;
     border-radius: 6px;
+    background: green;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 18px;
-  }
+}
   
   .follow-button:hover {
     background: #0d8bf1;

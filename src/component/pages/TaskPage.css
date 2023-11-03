@@ -2,23 +2,49 @@ input[type="text"]{
     font-size: 20px;
     width: 350px;
     padding-left: 29px;
-    height: 43px;
+    height: 3px;
     border-color: green;
     display: flex;
     margin-top: 10px;
     border-radius: 20px;
+    color: #f1f1f1;
     justify-content: center;
     align-items: center;
+}
+.container {
+    margin-block: 4rem;
+    margin-top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .insertTweetLink{
     margin-top: 40px;
 }
-button{
-    margin-top: 20px;
-    width: 200px ;
+.button button{
+    margin-top: 11px;
+    width: 100px ;
     border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
     border-color: white ;
     color: white;
     font-family:"NovaFlat-Regular";
     background-color: green;
+}
+@media (max-width:768px){
+    .img{
+        margin-left: 30vw !important;
+    }
+    .container{
+   
+        margin-block: 4rem;
+        margin-top: 46%;
+        display: flex;
+        align-items: center;
+  
+}
+
 }

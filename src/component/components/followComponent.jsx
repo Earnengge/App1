@@ -5,38 +5,37 @@ import { Link } from "react-router-dom";
 function FollowMeModal() {
   const [isFollowing, setIsFollowing] = useState(false);
   const [closeTimer, setCloseTimer] = useState(null);
-  const [showFollowModal, setShowFollowModal] = useState(true); // State for modal
+  const [showFollowModal, setShowFollowModal] = useState(false); // State for modal
 
-  // Check if the user has already followed
-  const hasUserFollowed = localStorage.getItem("userFollowed") === "true";
+  useEffect(() => {
+    // Check if the modal has been shown before
+    const hasModalBeenShown = localStorage.getItem("modalShown");
+
+    if (!hasModalBeenShown) {
+      // The modal hasn't been shown yet, so set the state to show it
+      setShowFollowModal(true);
+    }
+  }, []);
 
   const handleFollowClick = () => {
-          setIsFollowing(true);
-    // If the user hasn't followed, proceed
-    if (!hasUserFollowed) {
-      // Set the loading state to true
-      setIsFollowing(true);
+    // Set the loading state to true
+    setIsFollowing(true);
 
-      // Simulate an API call or any asynchronous operation (e.g., following on Twitter)
-      setTimeout(() => {
-        // You can also perform the actual "follow" operation with your API here
+    // Simulate an API call or any asynchronous operation (e.g., following on Twitter)
+    setTimeout(() => {
+      // You can also perform the actual "follow" operation with your API here
 
-        // After the operation is complete, you can set the loading state back to false and close the modal
-        setIsFollowing(true);
+      // After the operation is complete, you can set the loading state back to false
+      setIsFollowing(false);
 
-        // Set a flag in localStorage to indicate that the user has followed
-        localStorage.setItem("userFollowed", "true");
-      }, 1000); // Simulate a 2-second operation, you can adjust the duration
-    } else {
-      // User has already followed, close the modal
-    }
+      // Set a flag in localStorage to indicate that the modal has been shown
+      localStorage.setItem("modalShown", "true");
+    }, 20000); // Simulate a 2-second operation, you can adjust the duration
 
     // Start a timer to automatically close the modal after 2 minutes
     const timer = setTimeout(() => {
-      setIsFollowing(true);
-
       setShowFollowModal(false);
-    }, 1000); // 2 minutes in milliseconds
+    }, 20000); // 2 minutes in milliseconds
     setCloseTimer(timer);
   };
 

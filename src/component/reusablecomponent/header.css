@@ -190,7 +190,7 @@ body{
         display: none;
     }
     #social{
-        display:none;
+        display:block;
     }
     #header{
         min-width: 100vw;

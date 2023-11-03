@@ -280,6 +280,22 @@ height: 50%;
         margin-left: -13px;
         margin-bottom: -4px;
     }
+    .heading {
+      animation: zoomIn 3s; /* Adjust the duration as needed */
+      animation-fill-mode: both;
+    }
+    
+    @keyframes zoomIn {
+      0% {
+        transform: scale(0.5);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    
     .slider-container {
       width: 100%;
       /* padding-left: 48px; */

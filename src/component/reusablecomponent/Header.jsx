@@ -4,7 +4,6 @@ import Sidebar from "./Sidebar";
 import logo from "../imagesLogo/logo5.png"
 import menu from "../imagesLogo/menu.png"
 import close from "../imagesLogo/letter-x.png"
-import FollowMeModal from "../components/followComponent"; 
 
 import {
   twitterProvider,
@@ -18,7 +17,6 @@ function HeaderComponent() {
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
-  const [showFollowModal, setShowFollowModal] = useState(true); // State for modal
 
   const twitter = useSocialSignup(twitterProvider);
   const { user } = useAuthContext();
@@ -47,14 +45,13 @@ function HeaderComponent() {
         <div id="social">
           {
             user ?      ( <div className="wrap" style={{display:"flex",alignContent:"center",justifyContent:"center",}}><img className="img-responsive" loading="lazy" src={user?.photoURL} style={{marginRight:"10px"}} />
-            <span style={{marginInlineEnd: '1rem'}}>{user?.displayName}</span></div>  ) : <button onClick={twitter.signInWithSocial} className="buy-button" style={{ color: "white" }}>Connect Twitter</button>
+            <span style={{marginInlineEnd: '1rem'}}>{user?.displayName}</span></div>  ) : <button onClick={twitter.signInWithSocial} className="buy-button"  id="blinking-buton"style={{ color: "white",width:"100px"}}>Connect Twitter</button>
           }
 
          
 {/* Render the modal when showFollowModal is true */}
          
         </div>
-        {showFollowModal && <FollowMeModal  />} 
       </div>
 
     </>

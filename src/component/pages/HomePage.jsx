@@ -8,7 +8,10 @@ import Testimonials from "../components/how";
 import BackgroundVideo from "../imagesLogo/video.mp4"; // Update this with the actual path to your video
 import Footer from  "../pages/footer"
 import ContactForm from "./contact.jsx"
+
+
 function Home() {
+  
   return (
     <>
       <div >
@@ -60,7 +63,9 @@ function Home() {
                 alt="company-logo"
                 className="Logos"
               />
+              
             </div>
+         
           </div>
         </div>
         <div className="heading" >
