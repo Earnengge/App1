@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import Testimonials from "../components/how";
 import BackgroundVideo from "../imagesLogo/video.mp4"; // Update this with the actual path to your video
 import Footer from  "../pages/footer"
+import ContactForm from "./contact.jsx"
 function Home() {
   return (
     <>
@@ -20,25 +21,26 @@ function Home() {
           </video>
 
          
-          <div className="headertwo">
-          
-  <div className="heading">
-  <h2>
-    Ready 
-    for a crypto adventure with EarnEngage? </h2></div>
-
-
-
-
-
-
-            <div> 
-</div>
-          <h2></h2>
-          </div>
+        
           <div className="boxtwo">
             
             <div id="banner-text">
+            <div className="headertwo">
+          
+          <div className="heading">
+          <h2>
+            Ready 
+            for a crypto adventure with EarnEngage? </h2></div>
+        
+        
+        
+        
+        
+        
+                    <div> 
+        </div>
+                  <h2></h2>
+                  </div>
               <p style={{ marginTop: "30px" }}>
                 Join us in exploring boundless opportunities in the ever-evolving
                 crypto world. Inspired by my past experiences, both the challenges
@@ -50,8 +52,8 @@ function Home() {
               </p>
               <div className="btn" style={{ marginTop: "30px" }}>
                 <button className="buy-button">Buy</button>
-          <Link to="http://docs.earnengage.club/">    <button className="sell-button">whitepaper</button>
-          </Link>     </div>
+            <button className="sell-button"> <Link to="http://docs.earnengage.club/"> whitepaper</Link></button>
+               </div>
             </div>
             <div className="image">
               <img
@@ -80,9 +82,11 @@ function Home() {
           <Testimonials />
           
           <Horizontal/>
+        <ContactForm/>
         </div>
-       <Footer/>
+        <Footer/>
       </div>
+   
     </>
   );
 }

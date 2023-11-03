@@ -218,13 +218,15 @@ color: #ebebeb;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4); /* Realistic shadow on hover */
  
   }
-  .heading{
+  .heading {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     margin-top: 50px;
-  }
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
   
 @media(max-width:768px){
     #banner-text {
@@ -254,10 +256,8 @@ color: #ebebeb;
           justify-content: center;
           min-width: 100vw;
           padding: 0 36px;
-          margin-left: 19px;
           margin-top: 100px;
           padding-top: 26px;
-          margin-right: 30px;
       }
       .boxtwo{
         margin-left: 56px;

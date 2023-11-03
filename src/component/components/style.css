@@ -2,7 +2,6 @@
 .testimonials
 {
     
-        margin-left: 89px;
         display: grid;
         grid-template-columns: repeat(2, minmax(341px,2fr));
         row-gap: 33px;
@@ -15,9 +14,7 @@
 {
     position: relative;
     display: flex;
-    margin: 0 auto;
-    margin-left :5px;
-    font-family: "NovaFlat-Regular";
+   font-family: "NovaFlat-Regular";
     padding: 20px;
     box-sizing: border-box;
     border: white solid 1px;
@@ -25,6 +22,7 @@
     justify-content: center;
     align-items: center;
     text-align: start;
+    margin-left: 20px;
     box-shadow: 0 10px 40px rgba(0,0,0,.5);
     overflow: hidden;
 }
@@ -35,7 +33,7 @@
     object-fit:cover;
     background-size: cover;
     height: 300px;
-    background-repeat: none;
+   background-repeat: none;
     background-image: url("../imagesLogo//card.png");
 
 }
@@ -59,9 +57,12 @@
 }
 
 .testimonials .card .content
-{
-   position: relative;
-   z-index: 2;
+{  position: relative;
+    z-index: 2;
+   
+
+
+
 }
 .testimonials .card .content p {
     font-size: 13px;
@@ -105,6 +106,16 @@
     font-family: "DISCOVERY";
     font-weight: 400;
 }
+.testimonials .card .content
+{  position: relative;
+    z-index: 2;
+    height: 253px;
+    width: 292px;
+    margin-left:30px;
+
+
+
+}
 .HowItworks{
     
   
@@ -124,8 +135,16 @@
             
         
     }
-    .heading{
-        padding-left: 0px;
+    .heading {
+        padding-left: 19px;
+    }
+    .heading h1 {
+        font-family: 'DISCOVERY';
+        font-weight: 100;
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 17px;
+        margin-left: 42px;
     }
     .testimonials{
                 margin-left: 10px;

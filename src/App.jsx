@@ -8,6 +8,7 @@ import AboutPage from './component/pages/Aboutpage';
 import Profile from './component/pages/Profile';
 import LeaderBoard from './component/pages/LeaderBoardPage';
 import TaskPage from './component/pages/TaskPage';
+import Footer from "./component/pages/footer"
 
 
 

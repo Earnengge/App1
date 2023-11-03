@@ -14,8 +14,10 @@ padding: 0;
   }
   
   .menu-icon svg {
-    margin-right: 8px; /* Add some spacing between the icon and text if needed */
-  }
+    height: 47px;
+    width:40px;
+    margin-right: 8px;
+}
   
 @font-face {
     font-family: 'NovaFlat-Regular';
@@ -198,7 +200,7 @@ body{
         width: 60px;
         height: 60px;
         margin-right: auto;
-        margin-left: 38vw;
+        margin-left: 50vw;
   
     }
 }
