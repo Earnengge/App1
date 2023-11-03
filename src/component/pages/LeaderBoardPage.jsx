@@ -17,6 +17,7 @@ function LeaderBoard() {
  const calculateTotalPoints = (replies, retweets, likes) => {
   return replies * 3 + retweets * 2 + likes * 3;
 };
+// WXQtRzhsRHY5ekZxS21GTXBBUkM6MTpjaQ client TRcDFtW8gG601F9jGPF1QWvSQJZbpkKSQbocRX5jT6XzxEYYKs client secret
   return (
     <>
     <div id="main">
