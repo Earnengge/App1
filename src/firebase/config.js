@@ -7,17 +7,23 @@ import {
     TwitterAuthProvider,
 } from "firebase/auth";
 
+const apiKey = "AIzaSyA4ZvhRM8JcPvMD5lo4w6exFH2JiIGJNrM";
+const authDomain = "earnnew-fae96.firebaseapp.com";
+const projectId = "earnnew-fae96";
+const storageBucket = "earnnew-fae96.appspot.com";
+const messagingSenderId = "310277137837";
+const appId = "1:310277137837:web:5beb285acca1237284ed24";
+const measurementId = "G-LTEBXF6SDR";
+
 const firebaseConfig = {
-    apiKey: "AIzaSyA07T5h0fYiIwoD8M6cFU7eNfjDVguupAc",
-    authDomain: "web3-bb325.firebaseapp.com",
-    projectId: "web3-bb325",
-    storageBucket: "web3-bb325.appspot.com",
-    messagingSenderId: "244165396463",
-    appId: "1:244165396463:web:d2d8d51fcb2d2b2c07d81a",
-    measurementId: "G-MDZJXQG19J"
-  };
-
-
+    apiKey,
+    authDomain,
+    projectId,
+    storageBucket,
+    messagingSenderId,
+    appId,
+    measurementId,
+};
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
